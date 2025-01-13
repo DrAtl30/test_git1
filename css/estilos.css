@@ -1,0 +1,309 @@
+/* Estilos generales */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-color: #f4f4f4;*/
+    /*background-image: url('../img/fondoFCA.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;*/
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5a7561;
+    padding: 10px 20px;
+    color: white;
+}
+
+header img {
+    max-height: 90px;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header div a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+header div a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+}
+
+/* Carrusel */
+.carousel-inner {
+    height: 500px; 
+    display: flex;
+    align-items: flex-start; /* Original: align-items: center; */
+    justify-content: flex-start; /* Original: justify-content: center; */
+    overflow: hidden;
+}
+
+.carousel-inner .carousel-item {
+    height: 100%;
+    position: relative; /* Nueva línea */
+}
+
+/* Nueva */
+.carousel-inner img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* ----- */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333; 
+    border-radius: 50%;
+}
+
+footer {
+    position: relative;
+    background-color: #6e7b68;
+    padding: 0;
+    text-align: center;
+    margin-top: auto;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px); /* Aplicación del difuminado */
+}
+
+.footer-text {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+                                                  /*por qué esta repetido footer*/
+footer {
+    position: relative;
+    background-color: #6e7b68;
+    padding: 0;
+    text-align: left;
+    margin-top: auto;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.footer-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding-left: 20px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+/*Registro*/
+
+body.registro-pagina {
+    /* background-color: #f4f4f4; */ 
+    background-image: url("../img/fondoFCA.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.registro-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.registro-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.registro-header img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+.registro-form .form-control {
+    border-radius: 50px;
+    border: 1px solid #5a7561;
+}
+.registro-form button {
+    width: 100%;
+    background-color: #5a7561;
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+footer {
+position: relative;
+background-color: #6e7b68;
+text-align: center;
+margin-top: auto;
+height: 10vh;
+display: flex;
+justify-content: center;
+}
+
+footer img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.footer-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5); 
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.footer-text p {
+color: white;
+font-size: 1rem;
+margin: 0;
+}
+
+
+
+
+
+
+
+/**Inicio de Sesión **/
+
+body.inicio-sesion {
+    /*background-color: #f4f4f4;  de Minerva*/
+    background-image: url("../img/fondoFCA.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;            
+    
+}
+/*.registro-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}*/
+
+
+/*.registro-header {
+    text-align: center;
+    margin-bottom: 20px;
+}*/
+/*.registro-header img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}*/
+
+/*.registro-form .form-control {
+    border-radius: 50px;
+    border: 1px solid #5a7561;
+}*/
+/*.registro-form button {
+    width: 100%;
+    background-color: #5a7561;
+    color: white;
+    border: none;
+    border-radius: 50px;
+}*/
+.forgot-password {
+    text-align: center;
+    margin-top: 15px;
+}
+.forgot-password a {
+    color: #5a7561;
+    text-decoration: none;
+}
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+footer {
+position: relative;
+background-color: #6e7b68;
+text-align: center;
+margin-top: auto;
+height: 10vh;
+display: flex;
+justify-content: center;
+}
+
+footer img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.footer-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5); 
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.footer-text p {
+color: white;
+font-size: 1rem;
+margin: 0;
+}
